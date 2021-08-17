@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "npx eslint src --max-warnings=0",
     "test": "npx jest",
-    "test:watch": "npx jest --watch"
+    "test:watch": "npx jest --watch",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@styled-icons/evaicons-outline": "^10.34.0",
@@ -16,6 +17,8 @@
     "graphql-request": "^3.5.0",
     "leaflet": "^1.7.1",
     "next": "11.1.0",
+    "next-seo": "^4.26.0",
+    "nextjs-progressbar": "^0.0.11",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-leaflet": "^3.2.1",
@@ -23,6 +26,10 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.15.0",
+    "@graphql-codegen/add": "^3.0.0",
+    "@graphql-codegen/cli": "2.0.1",
+    "@graphql-codegen/typescript": "2.0.0",
+    "@graphql-codegen/typescript-operations": "2.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/babel__core": "^7.1.15",
